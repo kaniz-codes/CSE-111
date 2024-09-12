@@ -1,4 +1,6 @@
-/*Implement a class Box with attributes length, width, and height. Write a function combineBoxes() that accepts two Box objects, combines their dimensions by adding corresponding sides, and returns the resulting Box object. Demonstrate the combination of two boxes using object passing and returning. */
+/* Implement a class Box with attributes length, width, and height.
+Write a function combineBoxes() that accepts two Box objects, combines their dimensions by adding corresponding sides, and returns the resulting Box object.
+Demonstrate the combination of two boxes using object passing and returning. */
 
 
 #include <iostream>
