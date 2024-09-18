@@ -2,34 +2,31 @@
 Create a constructor that initializes the temperature in Celsius and an inline function to convert it to Fahrenheit.
 Display the temperature in both Celsius and Fahrenheit using an object. */
 
+// Solve 2
 #include <iostream>
 using namespace std;
-
 class Temperature {
 public:
     float celsius;
     float fahrenheit;
-
-    // Constructor
-    Temperature(float c) {
+    Temperature(float c)
+    {
         celsius = c;
-        fahrenheit = convertToFahrenheit();  // Call inline function
+        fahrenheit = celsiusToFahrenheit();
     }
-    // Inline function to convert Celsius to Fahrenheit
-    inline float convertToFahrenheit() {
+    inline float celsiusToFahrenheit() {
         return (celsius * 9.0 / 5.0) + 32;
     }
     //display
-    void displayTemperatures() {
-        cout << "Temperature in Celsius: " << celsius << "°C" << endl;
-        cout << "Temperature in Fahrenheit: " << fahrenheit << "°F" << endl;
+    void display() {
+        cout << "Celsius: " << celsius << "°C" << endl;
+        cout << "Fahrenheit: " << fahrenheit << "°F" << endl;
     }
 };
-
 int main() 
 {
     Temperature temp(25);
-    temp.displayTemperatures();
-
+    temp.display();
+    cout<<"Kaniz Fatema"<<endl<<"20245103154";
     return 0;
 }
