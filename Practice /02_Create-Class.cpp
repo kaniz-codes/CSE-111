@@ -2,17 +2,19 @@
 
 #include <iostream>
 using namespace std;
-class person
-{
+class person{
     public:
     string Name;
-    int contact;
+    int Contact;
 };
 int main() 
 {
-    person p1;
+    person p1,p2;
     p1.Name="Kaniz";
-    p1.contact= 30154;
-    cout<<p1.Name<<endl<<p1.contact<<endl;
+    p2.Name="Fatema";
+    p1.Contact=12334;
+    p2.Contact=54747;
+    cout<<p1.Name<<endl<<p1.Contact<<endl;
+    cout<<p2.Name<<endl<<p2.Contact<<endl;
     return 0;
 }
