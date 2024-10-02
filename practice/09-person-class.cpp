@@ -1,25 +1,30 @@
-/*  Create a class “Person”. Which has two public attributes 
+/*  Create a class “Person”. Which has two public attributes
 (Name, Address) and a private attribute contact. Initialize the attributes using constructor and print the values using a function display(). */
-
 #include <iostream>
 using namespace std;
-class Person{
+
+class Person
+{
     int contact;
-    public:
+
+public:
     string Name, Address;
-    
+
     Person()
     {
-        Name= "Kaniz";
-        Address="Dhaka";
-        contact= 112413;
+        Name = "Kaniz";
+        Address = "Dhaka";
+        contact = 112413;
     }
     void display()
     {
-        cout<<Name<<endl<<Address<<endl<<contact<<endl;
+        cout << Name << endl
+             << Address << endl
+             << contact << endl;
     }
 };
-int main() 
+
+int main()
 {
     Person obj;
     obj.display();

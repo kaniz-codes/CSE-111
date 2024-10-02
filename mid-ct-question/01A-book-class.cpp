@@ -5,12 +5,13 @@ int main() {
     b1.displayBook();
     return 0;
 */
+
 #include <iostream>
 using namespace std;
-class Book 
+class Book
 {
 public:
-    void readBook() 
+    void readBook()
     {
         cout << "Reading Book" << endl;
     }
@@ -19,7 +20,8 @@ public:
         cout << "Displaying Book" << endl;
     }
 };
-int main() 
+
+int main()
 {
     Book b1;
     b1.readBook();

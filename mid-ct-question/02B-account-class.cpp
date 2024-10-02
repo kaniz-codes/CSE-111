@@ -3,29 +3,32 @@ account holder name = "Not Assigned"
 account number = 0
 account type = "Savings"
 balance = 0.0 */
+
 #include <iostream>
 using namespace std;
-class Account 
+class Account
 {
     string holderName;
     int accountNumber;
     string accountType;
     float balance;
+
 public:
-    Account(string n, int a, string t, float b) {
+    Account(string n, int a, string t, float b)
+    {
         holderName = n;
         accountNumber = a;
         accountType = t;
         balance = b;
     }
-    Account() 
+    Account()
     {
         holderName = "Not Assigned";
         accountNumber = 0;
         accountType = "Savings";
         balance = 0.0;
     }
-    void displayAccount() 
+    void displayAccount()
     {
         cout << "Holder Name: " << holderName << endl;
         cout << "Account Number: " << accountNumber << endl;
@@ -33,7 +36,8 @@ public:
         cout << "Balance: " << balance << endl;
     }
 };
-int main() 
+
+int main()
 {
     Account acc1("John Doe", 123456, "Current", 5000.00);
     acc1.displayAccount();

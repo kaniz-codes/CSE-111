@@ -4,21 +4,26 @@ Create one object of the Teacher class. */
 
 #include <iostream>
 using namespace std;
-class Teacher{
-    public:
+
+class Teacher
+{
+public:
     string Name, shortcode, Dept;
 
     void set_value()
     {
-        cin>>Name>>shortcode>>Dept;
+        cin >> Name >> shortcode >> Dept;
     }
-    
+
     void get_value()
     {
-        cout<<Name<<endl<<shortcode<<endl<<Dept<<endl;
+        cout << Name << endl
+             << shortcode << endl
+             << Dept << endl;
     }
 };
-int main() 
+
+int main()
 {
     Teacher obj;
     obj.set_value();

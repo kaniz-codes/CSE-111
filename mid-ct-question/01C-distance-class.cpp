@@ -10,7 +10,7 @@ public:
 
 #include <iostream>
 using namespace std;
-class Distance 
+class Distance
 {
 public:
     int feet;
@@ -18,12 +18,14 @@ public:
     void addData(int f, float in);
     void showData();
 };
-void Distance :: addData(int f, float in)
+
+void Distance ::addData(int f, float in)
 {
-    feet=f;
-    inches= in;
+    feet = f;
+    inches = in;
 }
-void Distance :: showData()
+
+void Distance ::showData()
 {
     cout << "Feet: " << feet << ", Inches: " << inches << endl;
 }
@@ -31,7 +33,6 @@ void Distance :: showData()
 int main()
 {
     Distance obj;
-    obj.addData(474,5767);
+    obj.addData(474, 5767);
     obj.showData();
 }
-    
