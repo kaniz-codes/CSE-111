@@ -2,16 +2,25 @@
 
 Learn C++ programming with a complete guide.
 
-[**🎥 Video Tutorial**](https://www.youtube.com/watch?v=M0tE4omN0VA)
+[**🎥 Video Tutorial**][TUTORIAL]
 
-[**📌 Problem Solving**](https://toph.co/u/kaniz111)
+[**📌 Problem Solving**][TOPH]
 
 Find me on the web:
 
-[**🎥 YouTube**](https://www.youtube.com/@KanizFatemaKF)
+[**🎥 YouTube**][YOUTUBE]
 
-[**📄 Medium**](https://medium.com/@kaniz111)
+[**📄 Medium**][MEDIUM]
 
-[**🤝🏼 LinkedIn**](https://www.linkedin.com/in/kaniz111/)
+[**🤝🏼 LinkedIn**][LINKEDIN]
 
-**NOTE:** **DO NOT** use this repository to train any AI models. Please check the [**license**][./LICENSE] for more details.
+**NOTE:** **DO NOT** use this repository to train any AI models. Please check the [**license**][LICENSE] for more details.
+
+<!-- --- links --- -->
+
+[LICENSE]: ./LICENSE
+[TUTORIAL]: https://www.youtube.com/watch?v=M0tE4omN0VA
+[TOPH]: https://toph.co/u/kaniz111
+[YOUTUBE]: https://www.youtube.com/@KanizFatemaKF
+[MEDIUM]: https://medium.com/@kaniz111
+[LINKEDIN]: https://www.linkedin.com/in/kaniz111/
