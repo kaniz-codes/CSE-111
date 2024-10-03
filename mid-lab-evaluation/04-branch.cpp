@@ -6,39 +6,46 @@ Now match which object matches with the new branch name and print all the attrib
 #include <iostream>
 using namespace std;
 
-class Branch {
+class Branch
+{
 public:
-    string branch_name, branch_location, employee;
+	string branch_name, branch_location, employee;
 
-    void get_data() {
-        cout << "branch_name: ";
-        cin >> branch_name;
-        cout << "branch_location: ";
-        cin >> branch_location;
-        cout << "Employee Name: ";
-        cin >> employee;
-    }
+	void get_data()
+	{
+		cout << "branch_name: ";
+		cin >> branch_name;
+		cout << "branch_location: ";
+		cin >> branch_location;
+		cout << "Employee Name: ";
+		cin >> employee;
+	}
 
-    void set_data() {
-        cout << "Damn Output!" << endl;
-        cout << "branch_name: " << branch_name << endl
-             << "branch_location: " << branch_location << endl
-             << "Employee Name: " << employee << endl;
-    }
+	void set_data()
+	{
+		cout << "Damn Output!" << endl;
+		cout << "branch_name: " << branch_name << endl
+			 << "branch_location: " << branch_location << endl
+			 << "Employee Name: " << employee << endl;
+	}
 };
 
-int main() {
-    Branch obj[2];  // Array of 2 Branch objects
+int main()
+{
+	Branch obj[2]; // Array of 2 Branch objects
 
-    // Loop to get data for each branch
-    for (int i = 0; i < 2; i++) {
-        obj[i].get_data();  // Call get_data() for each Branch object
-    }
+	// Loop to get data for each branch
+	for (int i = 0; i < 2; i++)
+	{
+		obj[i].get_data(); // Call get_data() for each Branch object
+	}
 
-    // Loop to display data for each branch
-    for (int i = 0; i < 2; i++) {
-        obj[i].set_data();  // Call set_data() for each Branch object
-    }
-    cout<< " Good job kaniz!!!"
-    return 0;
+	// Loop to display data for each branch
+	for (int i = 0; i < 2; i++)
+	{
+		obj[i].set_data(); // Call set_data() for each Branch object
+	}
+
+	cout << " Good job kaniz!!!";
+	return 0;
 }
