@@ -7,36 +7,40 @@ Then, retrieve and print the balance and accountNumber using the getter methods.
 #include <iostream>
 using namespace std;
 
-class BankAccount {
-    string account_number;
-    float balance;
-    public:
-    BankAccount(string n, float b) 
-    {
-        account_number = n;
-        balance = b;
-    }
-    
-    string getNumber() 
-    {
-        return account_number;
-    }
-    
-    float getBalance() 
-    {
-        return balance;
-    }
-    
-    void deposit(float amount) 
-    {
-        balance += amount;
-    }
+class BankAccount
+{
+	string account_number;
+	float balance;
+
+public:
+	BankAccount(string n, float b)
+	{
+		account_number = n;
+		balance = b;
+	}
+
+	string getNumber()
+	{
+		return account_number;
+	}
+
+	float getBalance()
+	{
+		return balance;
+	}
+
+	void deposit(float amount)
+	{
+		balance += amount;
+	}
 };
 
-int main() {
-    BankAccount obj("20245103154", 1000);
-    obj.deposit(500);
-    cout << "Account Number: " << obj.getNumber() << endl;
-    cout << "Balance: " << obj.getBalance() << endl;
-    return 0;
+int main()
+{
+	BankAccount obj("20245103154", 1000);
+	obj.deposit(500);
+
+	cout << "Account Number: " << obj.getNumber() << endl;
+	cout << "Balance: " << obj.getBalance() << endl;
+	return 0;
 }

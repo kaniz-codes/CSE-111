@@ -8,38 +8,38 @@ using namespace std;
 class product
 {
 public:
-    string name;
-    int price, quantity;
+	string name;
+	int price, quantity;
 
-    void setProduct()
-    {
-        cin >> name >> price >> quantity;
-    }
+	void setProduct()
+	{
+		cin >> name >> price >> quantity;
+	}
 
-    void printProduct()
-    {
-        cout << name << endl
-             << price << endl
-             << quantity << endl;
-    }
+	void printProduct()
+	{
+		cout << name << endl
+			 << price << endl
+			 << quantity << endl;
+	}
 
-    void callProduct()
-    {
-        setProduct();
-    }
+	void callProduct()
+	{
+		setProduct();
+	}
 
-    ~product()
-    {
-        cout << "product object destroyed" << endl;
-    }
+	~product()
+	{
+		cout << "product object destroyed" << endl;
+	}
 };
 
 int main()
 {
-    product p1;
+	product p1;
 
-    p1.callProduct();
-    p1.printProduct();
+	p1.callProduct();
+	p1.printProduct();
 
-    return 0;
+	return 0;
 }
