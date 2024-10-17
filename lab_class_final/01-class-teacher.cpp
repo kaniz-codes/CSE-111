@@ -6,8 +6,14 @@ class Teacher{
     string Name, Short_code, Address;
     void get_data()
     {
-        cout<< "Name,Short_code,Address,salary";
-        cin>>Name>>Short_code>>Address>>salary;
+        cout<< "Name";
+        cin>>Name;
+        cout<< "Short_code";
+        cin>>Short_code;
+        cout<< "Address";
+        cin>>Address;
+        cout<< "salary";
+        cin>>salary;
     }
 
     void display_data()
@@ -38,4 +44,3 @@ int main()
     }
 return 0;
 }
-
