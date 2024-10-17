@@ -25,6 +25,7 @@ int main()
 {
     Teacher obj[2];
     int i;
+    Teacher *p= obj;
     for(i=0;i<3;i++)
     {
         obj[i].get_data();
@@ -35,12 +36,12 @@ int main()
     {
         if (obj[i].Short_code==x)
         {
-            obj[i].display_data();
+            //obj[i].display_data();
+            p-> display_data();
+            p++;
+            break;
         }
-        else
-        {
-            cout<<"Not found";
-        }
+
     }
 return 0;
 }
