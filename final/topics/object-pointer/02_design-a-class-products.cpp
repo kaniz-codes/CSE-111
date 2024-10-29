@@ -1,3 +1,6 @@
+/*Design a class named Product with attributes: product_Name (public), product_Code (public), and product_Price (private). Use a parameterized constructor to initialize these attributes.
+Implement a method called apply_discount() that reduces the price by a given percentage. Call the function using an object pointer. */
+
 #include<iostream>
 using namespace std;
 
