@@ -21,6 +21,8 @@ public:
 void displayEmployeeInfo(Employee obj)
 {
     cout<<"Employee_id: "<<obj.Employee_id<<endl<<"salary: "<<obj.salary<<endl;
+    cout<<endl<<"Kaniz Fatema"<<endl<<"Thanks for running the code!"<<endl;
+    cout<<"Follow for more!!"<<endl;
 }
 
 int main()
@@ -32,5 +34,6 @@ int main()
     cin>>s;
     Employee obj(i,s);
     displayEmployeeInfo(obj);
+
 }
 
