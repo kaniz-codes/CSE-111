@@ -4,15 +4,18 @@ Provide versions that work with hours, minutes, and seconds. */
 #include <iostream>
 using namespace std;
 
-struct Time {
+struct Time
+{
     int hours;
     int minutes;
     int seconds;
 };
 
-class TimeManipulator {
+class TimeManipulator
+{
 public:
-    Time addTime(int h1, int h2) {
+    Time addTime(int h1, int h2)
+    {
         Time result;
         result.hours = h1 + h2;
         result.minutes = 0;
@@ -20,35 +23,41 @@ public:
         return result;
     }
 
-    Time addTime(int h1, int h2, int m1, int m2) {
+    Time addTime(int h1, int h2, int m1, int m2)
+    {
         Time result;
         result.hours = h1 + h2;
         result.minutes = m1 + m2;
         result.seconds = 0;
-        if (result.minutes >= 60) {
+        if (result.minutes >= 60)
+        {
             result.minutes -= 60;
             result.hours++;
         }
         return result;
     }
 
-    Time addTime(int h1, int h2, int m1, int m2, int s1, int s2) {
+    Time addTime(int h1, int h2, int m1, int m2, int s1, int s2)
+    {
         Time result;
         result.hours = h1 + h2;
         result.minutes = m1 + m2;
         result.seconds = s1 + s2;
-        if (result.seconds >= 60) {
+        if (result.seconds >= 60)
+        {
             result.seconds -= 60;
             result.minutes++;
         }
-        if (result.minutes >= 60) {
+        if (result.minutes >= 60)
+        {
             result.minutes -= 60;
             result.hours++;
         }
         return result;
     }
 
-    Time subTime(int h1, int h2) {
+    Time subTime(int h1, int h2)
+    {
         Time result;
         result.hours = abs(h1 - h2);
         result.minutes = 0;
@@ -56,41 +65,52 @@ public:
         return result;
     }
 
-    Time subTime(int h1, int h2, int m1, int m2) {
+    Time subTime(int h1, int h2, int m1, int m2)
+    {
         Time result;
-        if (h1 > h2 || (h1 == h2 && m1 >= m2)) {
+        if (h1 > h2 || (h1 == h2 && m1 >= m2))
+        {
             result.hours = h1 - h2;
             result.minutes = m1 - m2;
-        } else {
+        }
+        else
+        {
             result.hours = h2 - h1;
             result.minutes = m2 - m1;
         }
         result.seconds = 0;
 
-        if (result.minutes < 0) {
+        if (result.minutes < 0)
+        {
             result.minutes += 60;
             result.hours--;
         }
         return result;
     }
 
-    Time subTime(int h1, int h2, int m1, int m2, int s1, int s2) {
+    Time subTime(int h1, int h2, int m1, int m2, int s1, int s2)
+    {
         Time result;
-        if (h1 > h2 || (h1 == h2 && m1 > m2) || (h1 == h2 && m1 == m2 && s1 >= s2)) {
+        if (h1 > h2 || (h1 == h2 && m1 > m2) || (h1 == h2 && m1 == m2 && s1 >= s2))
+        {
             result.hours = h1 - h2;
             result.minutes = m1 - m2;
             result.seconds = s1 - s2;
-        } else {
+        }
+        else
+        {
             result.hours = h2 - h1;
             result.minutes = m2 - m1;
             result.seconds = s2 - s1;
         }
 
-        if (result.seconds < 0) {
+        if (result.seconds < 0)
+        {
             result.seconds += 60;
             result.minutes--;
         }
-        if (result.minutes < 0) {
+        if (result.minutes < 0)
+        {
             result.minutes += 60;
             result.hours--;
         }
@@ -104,7 +124,8 @@ public:
     }
 };
 
-int main() {
+int main()
+{
     TimeManipulator t;
     int h1, h2, m1, m2, s1, s2;
     int format;
@@ -118,13 +139,17 @@ int main() {
 
     Time result;
 
-    switch (format) {
+    switch (format)
+    {
     case 1:
         cout << "Provide given time and current time: ";
         cin >> h1 >> h2;
-        if (type == 1) {
+        if (type == 1)
+        {
             result = t.addTime(h1, h2);
-        } else {
+        }
+        else
+        {
             result = t.subTime(h1, h2);
         }
         break;
@@ -132,9 +157,12 @@ int main() {
     case 2:
         cout << "Provide given time and current time: ";
         cin >> h1 >> m1 >> h2 >> m2;
-        if (type == 1) {
+        if (type == 1)
+        {
             result = t.addTime(h1, h2, m1, m2);
-        } else {
+        }
+        else
+        {
             result = t.subTime(h1, h2, m1, m2);
         }
         break;
@@ -142,9 +170,12 @@ int main() {
     case 3:
         cout << "Provide given time and current time: ";
         cin >> h1 >> m1 >> s1 >> h2 >> m2 >> s2;
-        if (type == 1) {
+        if (type == 1)
+        {
             result = t.addTime(h1, h2, m1, m2, s1, s2);
-        } else {
+        }
+        else
+        {
             result = t.subTime(h1, h2, m1, m2, s1, s2);
         }
         break;
@@ -158,5 +189,5 @@ int main() {
     cout << endl << "Kaniz Fatema" << endl;
     cout << "Thanks for running the code!" << endl;
     cout << "Follow for more!!" << endl;
-  return 0;
+    return 0;
 }
