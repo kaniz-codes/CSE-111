@@ -59,6 +59,9 @@ int main()
         cout<<"Enter minute2: ";
         cin>>m2;
         TimeManipulation obj (h1,h2,m1,m2);
+        cout << endl << "Kaniz Fatema" << endl;
+        cout << "Thanks for running the code!" << endl;
+        cout << "Follow for more!!" << endl;
     }
     else if(x==2)
     {
