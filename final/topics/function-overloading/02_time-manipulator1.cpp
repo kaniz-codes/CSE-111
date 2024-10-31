@@ -102,6 +102,9 @@ int main()
     time.subtract(h1, m1, s1);
     cout << "After subtracting time: ";
     time.displayTime();
+    cout << endl << "Kaniz Fatema" << endl;
+    cout << "Thanks for running the code!" << endl;
+    cout << "Follow for more!!" << endl;
 
     return 0;
 }
