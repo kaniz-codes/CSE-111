@@ -39,6 +39,9 @@ int main()
         cout<<"Enter width: "<<endl;
         cin>>width;
         calculate(length,width);
+        cout << endl << "Kaniz Fatema" << endl;
+        cout << "Thanks for running the code!" << endl;
+        cout << "Follow for more!!" << endl;
     }
     else if(x==3)
      {
