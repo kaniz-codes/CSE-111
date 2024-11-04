@@ -49,6 +49,9 @@ int main()
         {
             cout<<"Found Information"<<endl;
             obj[i].display_data();
+            cout << endl << "Kaniz Fatema" << endl;
+            cout << "Thanks for running the code!" << endl;
+            cout << "Follow for more!!" << endl;
             break;
         }
     }
