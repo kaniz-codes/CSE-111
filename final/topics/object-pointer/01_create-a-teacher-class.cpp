@@ -1,5 +1,7 @@
-/* Create a Teacher class with public attributes Name, Short_code, Address, and a private attribute salary. Initialize the attributes for 10 objects of the Teacher class.
-Now, find a specific teacher based on the short code (given by user) and print the details of that teacher using a pointer. Also, find the average salary of the teachers. */
+/* Create a Teacher class with public attributes Name, Short_code, Address, and a private attribute salary.
+Initialize the attributes for 10 objects of the Teacher class.
+Now, find a specific teacher based on the short code (given by user) and
+print the details of that teacher using a pointer. Also, find the average salary of the teachers. */
 
 #include<iostream>
 using namespace std;
@@ -45,6 +47,7 @@ int main()
     {
         if(obj[i].short_code==x)
         {
+            cout<<"Found Information"<<endl;
             obj[i].display_data();
             break;
         }
