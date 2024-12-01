@@ -4,7 +4,7 @@ If the distance objects aren't equal, make the lesser object equal to the greate
 #include <iostream>
 using namespace std;
 
-class Distance {
+class Distance { 
 public:
     float length;
     Distance(float l) 
