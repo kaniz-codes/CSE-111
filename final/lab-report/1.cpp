@@ -45,7 +45,7 @@ public:
         cout << "Salary: " << salary << endl;
         cout << "Contact: " << contact << endl;
     }
-};
+}; 
 
 class Employee : public Company, public HR
 {
