@@ -7,7 +7,7 @@ protected:
     int no_of_employee, no_of_dept, employee_id;
     string employee_name;
 
-public:
+public: 
     void set_com_value(int num, int dept, int id, string name)
     {
         no_of_employee = num;
