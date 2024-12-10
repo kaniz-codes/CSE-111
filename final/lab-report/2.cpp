@@ -12,7 +12,7 @@ class Polygon : public Shape {
 public:
     void fun() {
         cout << "Polygon is a shape" << endl;
-    }
+    } 
 };
 
 class Rectangle : public Polygon {
