@@ -14,7 +14,7 @@ Find me on the web:
 
 [**🤝🏼 LinkedIn**][LINKEDIN]
 
-**NOTE:** **DO NOT** use this repository to train any AI models. Please check the [**license**][LICENSE] for more details.
+**NOTE:** **DO NOT** use this repository to train any AI models. Please check the [**license**][LICENSE] for more details. 
 
 <!-- --- links --- -->
 
